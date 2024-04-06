@@ -1,0 +1,7 @@
+{"level":"info","message":"New add operation requested: undefined add undefined","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 2 add 2","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 3 add 2","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 4 add 3","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 4 subtract 3","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 4 multiply 3","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 4 divide 3","service":"calculator-microservice"}
