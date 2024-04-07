@@ -42,7 +42,9 @@
                         </div>
                         <div class="col-md-3">
                             <label for="num2" class="form-label">Number 2:</label>
-                            <input type="text" value="{{num2}}" id="num2" name="num2" class="form-control" required />
+                            <input type="text" value="{{num2}}" 
+                            id="num2" name="num2" class="form-control" 
+                            {{#if disableInput}}disabled{{/if}} required />
                         </div>
                         <div class="col-md-3">
                             <label for="num2" class="form-label">Result:</label>
@@ -54,23 +56,46 @@
                 <div class="col-md-3">
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <button class="btn btn-outline-primary" 
-                        type="submit" class="btn btn-primary">Add</button>
+                        type="submit">Add</button>
                         &nbsp;
                         <button class="btn btn-outline-danger" 
-                        type="submit" formaction="/subtract" class="btn btn-primary">Subtract</button>&nbsp;
+                        type="submit" formaction="/subtract">Subtract</button>&nbsp;
                         <button class="btn btn-outline-info" 
-                        type="submit" formaction="/multiply" class="btn btn-primary">Multiply</button>&nbsp;
+                        type="submit" formaction="/multiply">Multiply</button>&nbsp;
                         <button class="btn btn-outline-secondary" 
-                        type="submit" formaction="/divide" class="btn btn-primary">Divide</button>&nbsp;
-                        <button class="btn btn-outline-warning" 
-                        type="submit" formaction="/reset" class="btn btn-primary">Reset</button>
+                        type="submit" formaction="/divide">Divide</button>&nbsp;
                     </div>
                 </div>
+            </div><br>
+                <div class="row">
+                <div class="col-md-3">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button class="btn btn-outline-primary" 
+                        type="submit" formaction="/exponentiate">Exponentiate</button>&nbsp;
+                        <button class="btn btn-outline-danger" 
+                        type="submit" formaction="/sqrt">Sqaure root</button>&nbsp;
+                        <button class="btn btn-outline-info" 
+                        type="submit" formaction="/modulo">Modulo</button>&nbsp;
+                        <button class="btn btn-outline-secondary" 
+                        type="submit" formaction="/factorial">Factorial</button>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-warning" 
+                    type="submit" formaction="/reset" class="btn btn-primary">Reset</button>
+                </div> 
             </div>
             </form>
             <div class="text-danger text-center">
                 {{#if error}}
                 <p>Error: {{error}}</p>
+                {{/if}}
+            </div>
+            <div class="text-info text-center">
+                {{#if info}}
+                <p>Additional information: {{info}}</p>
                 {{/if}}
             </div>
         </div>
