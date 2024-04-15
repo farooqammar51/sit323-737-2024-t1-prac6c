@@ -91,3 +91,5 @@
 {"level":"info","message":"New modulo operation requested: 4 % 4","service":"calculator-microservice"}
 {"level":"info","message":"New factorial operation requested: 4!","service":"calculator-microservice"}
 {"level":"info","message":"New square root operation requested: sqrt(4)","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 0 * 0","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 0 - 0","service":"calculator-microservice"}
