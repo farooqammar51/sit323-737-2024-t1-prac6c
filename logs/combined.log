@@ -93,3 +93,5 @@
 {"level":"info","message":"New square root operation requested: sqrt(4)","service":"calculator-microservice"}
 {"level":"info","message":"New add operation requested: 0 * 0","service":"calculator-microservice"}
 {"level":"info","message":"New add operation requested: 0 - 0","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 0 add 0","service":"calculator-microservice"}
+{"level":"info","message":"New add operation requested: 0 - 0","service":"calculator-microservice"}
